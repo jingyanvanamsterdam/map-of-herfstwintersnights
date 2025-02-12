@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Modify the display of image in pictures' popup container*/
+.pictures {
+  width: 600px; 
+}
+
+.pictures .leaflet-popup-content {
+  width: 500px !important;
+  margin: 50px 10px;
+}
+
+.pictures .leaflet-popup-content-wrapper {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the style of the popup container*/
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  background-image: url('assets/icons/background.jpeg');
+  background-position: center;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgba(65, 229, 89);
+}
+
+/* Modify the Layer control*/
+.leaflet-control-layers {
+  background-image: url('assets/icons/background.jpeg');
+  background-position: center;
+}
+
+.leaflet-control-layers-toggle {
+  background-image: url('assets/icons/eye.png') !important;
+  background-size:cover;
+  background-position: center;
+}
