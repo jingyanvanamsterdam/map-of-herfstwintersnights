@@ -86,8 +86,8 @@ onMounted(()=>{
   })
   const spiralIcon = L.icon({
     iconUrl: spiral,
-    iconSize: [70, 70], 
-    iconAnchor: [35, 35], 
+    iconSize: [50, 50], 
+    iconAnchor: [25, 25], 
     className: 'icons'
   })
   const eyeIcon = L.icon({

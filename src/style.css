@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Modify the display of image in pictures' popup container*/
 .pictures {
   width: 600px; 
@@ -40,4 +39,35 @@ audio::-webkit-media-controls-panel {
   background-image: url('assets/icons/eye.png') !important;
   background-size:cover;
   background-position: center;
+  margin: 8px;
+}
+
+/* remove radius of the base layer*/
+
+.leaflet-control-layers-base .leaflet-control-layers-selector {
+  display: none;
+}
+.leaflet-control-layers-base {
+  font-size: 23px;
+  padding: 10px;
+}
+.leaflet-control-layers-separator {
+  height: 0;
+  border-top: 5px dotted rgb(223, 233, 237);
+  margin: 5px -10px 5px -6px;
+}
+.leaflet-control-layers-list {
+  margin: 20px;
+}
+.leaflet-control-layers-overlays {
+  padding: 10px;
+  font-size: 20px;
+}
+.leaflet-control-layers-overlays .leaflet-control-layers-selector{
+  margin: 2px 23px 2px 2px; 
+}
+
+.leaflet-control-layers-overlays span{
+  display: flex; 
+  align-items: center;
 }
